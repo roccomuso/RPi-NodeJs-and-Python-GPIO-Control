@@ -1,0 +1,17 @@
+{
+  "name": "relay_listener",
+  "version": "1.0.0",
+  "description": "Server Listener per pilotare un relay allo stato solito tramite i GPIO pin del RPi",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Rocco Musolino",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.13.0",
+    "onoff": "^1.0.2",
+    "rpi-gpio": "^0.5.2"
+  }
+}
