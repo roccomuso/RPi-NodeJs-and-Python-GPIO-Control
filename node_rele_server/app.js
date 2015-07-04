@@ -35,6 +35,11 @@ app.get('/get', function (req, res) { // processiamo richiesta get verso /toggle
 
 });
 
+// Express route for any other unrecognised incoming requests
+app.get('*', function(req, res) {
+  res.status(404).send('Unrecognised API call');
+});
+
 var server = app.listen(porta, function () { // server in ascolto sulla porta 5000
 
 
